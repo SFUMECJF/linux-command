@@ -1,0 +1,2 @@
+ls > $TMPDIR/aaaaa $TMPDIR/bbbbb   
+exit

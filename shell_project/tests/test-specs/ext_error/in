@@ -1,0 +1,2 @@
+/bin/ls /no/such/file
+exit

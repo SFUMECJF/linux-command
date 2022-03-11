@@ -1,0 +1,9 @@
+path /bin $UTILDIR
+p1.sh > $TMPDIR/output$TESTID1 & p2.sh > $TMPDIR/output$TESTID2 & p3.sh > $TMPDIR/output$TESTID3
+cat $TMPDIR/output$TESTID1
+cat $TMPDIR/output$TESTID2
+cat $TMPDIR/output$TESTID3
+rm -rf $TMPDIR/output$TESTID1
+rm -rf $TMPDIR/output$TESTID2
+rm -rf $TMPDIR/output$TESTID3
+exit

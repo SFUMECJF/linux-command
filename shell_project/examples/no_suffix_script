@@ -1,0 +1,10 @@
+#! /bin/bash
+# A script demoing some of the more advanced features in bash. It's important
+# to remember that as much as this looks like a full programming language
+# (because it is!), you can still get the same effect by typing in the code
+# below one line at a time in your REPL.
+# 
+# It is legal for a script file to have no suffix. Running this file in bash
+# will still result in it running, not an invalid script error.
+
+echo "Hello world, from a valid bash script!"

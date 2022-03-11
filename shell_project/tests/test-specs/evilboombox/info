@@ -1,0 +1,6 @@
+{
+  "name": "Evil Boom Box",
+  "description": "Runs the test using EvilBoomBox, a library which causes syscalls and memory allocations to fail. Puts the shell through a number of standard activities (reading a file, writing a file, changing directories, changing paths, etc.) To debug this test, run the command given by `make describe`, then look for output from the script describing whether allocation or syscalls failed.",
+  "rc": "nocrash",
+  "pointval": 1
+}

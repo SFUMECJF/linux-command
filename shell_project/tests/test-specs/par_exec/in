@@ -1,0 +1,3 @@
+path tests/test-utils
+p1.sh & p2.sh & p3.sh
+exit

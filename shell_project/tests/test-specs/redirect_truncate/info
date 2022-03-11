@@ -1,0 +1,6 @@
+{
+  "name": "Long Then Short",
+  "description": "Make sure that redirection correctly truncates a file",
+  "pointval": 3,
+  "rc": 0
+}

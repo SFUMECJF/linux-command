@@ -1,0 +1,6 @@
+{
+  "name": "Redirect, No Command",
+  "description": "Test redirection with a missing command",
+  "rc": 0,
+  "pointval": 1
+}

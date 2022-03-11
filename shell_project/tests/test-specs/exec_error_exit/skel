@@ -1,0 +1,4 @@
+/bin/echo Hello I am the parent shell
+/no/such/executable
+/bin/echo This should only be printed once!
+exit

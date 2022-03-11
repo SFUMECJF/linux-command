@@ -1,0 +1,4 @@
+ls $UTILDIR/p2a-test > $TMPDIR/output$TESTID
+cat $TMPDIR/output$TESTID
+rm -f $TMPDIR/output$TESTID
+exit

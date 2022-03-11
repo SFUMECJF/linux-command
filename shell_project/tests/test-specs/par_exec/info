@@ -1,0 +1,6 @@
+{
+  "name": "Parallel Execution",
+  "description": "Basic test of running parallel commands.",
+  "rc": 0,
+  "pointval": 3
+}

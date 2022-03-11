@@ -1,0 +1,6 @@
+{
+  "name": "Invalid invocation, two arguments",
+  "description": "Invoke the shell with two script files. Note that the script file for this test is totally irrelevant, since the command used to run the shell in the first place is invalid.",
+  "rc": 1,
+  "pointval": 1
+}

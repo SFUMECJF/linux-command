@@ -1,0 +1,2 @@
+ls > $TMPDIR/file1 > $TMPDIR/file2
+exit

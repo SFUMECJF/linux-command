@@ -1,0 +1,6 @@
+{
+  "name": "Redirect, stderr + stdout",
+  "pointval": 3,
+  "description": "Test that both stdout and stderr are redirected",
+  "rc": 0
+}

@@ -1,0 +1,5 @@
+path /bin tests/test-utils
+p5.sh > /tmp/ans/utcsh/output29 & p4.sh > /tmp/ans/utcsh/output29
+cat /tmp/ans/utcsh/output29
+rm -f /tmp/ans/utcsh/output29
+exit

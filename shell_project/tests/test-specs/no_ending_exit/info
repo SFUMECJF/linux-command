@@ -1,0 +1,6 @@
+{
+  "name": "No Ending Exit",
+  "description": "Script does not end with the exit command. Ensures the shell handles EOF correctly.",
+  "rc": 0,
+  "pointval": 1
+}

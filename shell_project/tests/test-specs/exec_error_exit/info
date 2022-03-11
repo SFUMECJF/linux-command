@@ -1,0 +1,6 @@
+{
+  "name": "Exit After Exec Error",
+  "description": "Ensures that the child shell does not attempt to continue to execute commands if an exec() call fails",
+  "rc": 0,
+  "pointval": 1
+}

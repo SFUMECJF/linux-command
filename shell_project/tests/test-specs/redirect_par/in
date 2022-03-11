@@ -1,0 +1,9 @@
+path /bin tests/test-utils
+p1.sh > /tmp/ans/utcsh/output301 & p2.sh > /tmp/ans/utcsh/output302 & p3.sh > /tmp/ans/utcsh/output303
+cat /tmp/ans/utcsh/output301
+cat /tmp/ans/utcsh/output302
+cat /tmp/ans/utcsh/output303
+rm -rf /tmp/ans/utcsh/output301
+rm -rf /tmp/ans/utcsh/output302
+rm -rf /tmp/ans/utcsh/output303
+exit

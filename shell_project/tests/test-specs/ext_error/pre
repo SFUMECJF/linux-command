@@ -1,0 +1,1 @@
+/bin/ls /no/such/file > ./tests/test-specs/8/out 2> ./tests/test-specs/8/err

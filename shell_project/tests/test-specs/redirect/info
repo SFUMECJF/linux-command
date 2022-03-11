@@ -1,0 +1,6 @@
+{
+  "name": "Redirect, basic",
+  "description": "Test that file redirection works",
+  "pointval": 3,
+  "rc": 0
+}

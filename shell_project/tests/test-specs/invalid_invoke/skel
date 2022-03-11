@@ -1,0 +1,7 @@
+/bin/echo "Hello!"
+exit
+
+Hello there! The essay penned in this space *definitely* makes this an illegal
+scriptfile, but it doesn't matter, because this scriptfile should never run
+to begin with. The invocation used to launch it is invalid (look at the command
+used to run the script)

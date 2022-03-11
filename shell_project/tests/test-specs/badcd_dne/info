@@ -1,0 +1,6 @@
+{
+  "name": "Bad cd, target does not exist",
+  "description": "Attempt to cd to a non-existent directory.",
+  "rc": 0,
+  "pointval": 1
+}

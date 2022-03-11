@@ -1,0 +1,6 @@
+{
+  "name": "Bad cd, no args",
+  "description": "Attempt to run a cd command with no arguments",
+  "rc": 0,
+  "pointval": 1
+}

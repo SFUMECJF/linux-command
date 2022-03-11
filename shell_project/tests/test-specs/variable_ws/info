@@ -1,0 +1,6 @@
+{
+  "name": "Variable whitespace",
+  "description": "Tests that commands with variable whitespace still run properly. Features tabs, spaces, and newlines.",
+  "rc": 0,
+  "pointval": 1
+}

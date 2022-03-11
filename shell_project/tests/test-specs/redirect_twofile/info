@@ -1,0 +1,6 @@
+{
+  "name": "Redirect, Two Files",
+  "description": "Test redirection when attempting to redirect to two files",
+  "rc": 0,
+  "pointval": 2
+}

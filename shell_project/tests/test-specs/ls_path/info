@@ -1,0 +1,6 @@
+{
+  "name": "ls with path",
+  "description": "Check that default PATH is working correctly",
+  "rc": 0,
+  "pointval": 2
+}

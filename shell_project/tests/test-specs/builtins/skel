@@ -1,0 +1,6 @@
+cd ..
+cd /usr/bin
+cd $TMPDIR
+path
+path /usr/bin
+exit

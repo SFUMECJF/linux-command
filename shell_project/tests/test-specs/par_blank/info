@@ -1,0 +1,6 @@
+{
+  "name": "Blank concurrent commands",
+  "description": "Multiple concurrent commmands that only contain whitespace",
+  "rc": 0,
+  "pointval": 1
+}

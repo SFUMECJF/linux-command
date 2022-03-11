@@ -1,0 +1,5 @@
+path /bin $UTILDIR
+echo This is a relatively long string heyo test test lol > $TMPDIR/output$TESTID
+echo This is a short string > $TMPDIR/output$TESTID
+cat $TMPDIR/output$TESTID
+exit

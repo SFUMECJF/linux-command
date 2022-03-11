@@ -1,0 +1,6 @@
+{
+  "name": "Bad cd, two args",
+  "description": "Attempt to run a cd command with two arguments",
+  "rc": 0,
+  "pointval": 1
+}

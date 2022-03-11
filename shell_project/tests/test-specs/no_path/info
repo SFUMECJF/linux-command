@@ -1,0 +1,6 @@
+{
+  "name": "Test no path",
+  "description": "Make sure that scripts not on the PATH do not inadvertently run.",
+  "rc": 0,
+  "pointval": 1
+}

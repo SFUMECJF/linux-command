@@ -1,0 +1,6 @@
+{
+  "name": "External Program, with errors",
+  "description": "Run ls with an invalid file, which generates output on stderr.",
+  "rc": 0,
+  "pointval": 1
+}

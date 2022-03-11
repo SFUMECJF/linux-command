@@ -1,0 +1,6 @@
+cd $SRCDIR
+path /bin $UTILDIR
+ls $UTILDIR/p2a-test
+ls $UTILDIR/p2a-test > $TMPDIR/$TESTIDebb
+ls $UTILDIR/p2a-test > $TMPDIR/$TESTIDebb1 & echo despiteallmyrageiamstilljustaratinacage > $TMPDIR/$TESTIDebb2
+exit

@@ -1,0 +1,6 @@
+{
+  "name": "PATH Manipulation",
+  "pointval": 1,
+  "description": "Make sure the PATH is properly updated mid-run",
+  "rc": 0
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Torture Test 2",
+  "description": "Very long commands. Should not crash the shell, but no requirements are made about what is output.",
+  "rc": "nocrash",
+  "pointval": 2
+}

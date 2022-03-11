@@ -1,0 +1,6 @@
+{
+  "name": "Redirect, No Files",
+  "description": "Test redirection with a missing file",
+  "rc": 0,
+  "pointval": 1
+}

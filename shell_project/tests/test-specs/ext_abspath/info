@@ -1,0 +1,6 @@
+{
+  "name": "External Program, Absolute Path",
+  "description": "Run ls with the absolute path to the program",
+  "rc": 0,
+  "pointval": 1
+}

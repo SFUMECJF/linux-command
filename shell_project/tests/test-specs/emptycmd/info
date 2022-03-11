@@ -1,0 +1,6 @@
+{
+  "name": "Empty commands",
+  "description": "Tests command lines with only whitespace. Features a mix of spaces, tabs, and newlines, which must all be handled.",
+  "rc": 0,
+  "pointval": 1
+}

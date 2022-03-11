@@ -1,0 +1,6 @@
+{
+  "name": "Built-ins",
+  "description": "Check that the shell can parse built-ins. Passing this test does NOT mean that your built-ins do the right thing,just that they parse correctly!",
+  "rc": 0,
+  "pointval": 1
+}

@@ -1,0 +1,3 @@
+ls $UTILDIR/p2a-test
+echo Hey there!
+exit

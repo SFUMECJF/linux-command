@@ -1,0 +1,6 @@
+{
+  "name": "Invalid script usage",
+  "description": "Checks that scripts cannot be run if they are the only argument on the command line. Scripts should only run if they are specified as an argument to utcsh.",
+  "rc": 0,
+  "pointval": 1
+}

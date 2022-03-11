@@ -1,0 +1,6 @@
+{
+  "name": "Invalid scriptfile",
+  "description": "Tests that an invalid scriptfile cannot be run",
+  "rc": 1,
+  "pointval": 1
+}

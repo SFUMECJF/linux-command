@@ -1,0 +1,6 @@
+{
+  "name": "Torture Test 1",
+  "description": "Redirection and Parallel commands combined",
+  "pointval": 4,
+  "rc": 0
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bad exit, has an argument",
+  "description": "Attempt to run an exit command with an argument",
+  "rc": 0,
+  "pointval": 1
+}

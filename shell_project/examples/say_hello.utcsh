@@ -1,0 +1,8 @@
+/bin/echo Hello! I am UTCSH!
+/bin/echo -n Your current working directory is:
+/bin/pwd
+/bin/echo
+/bin/echo The contents of this directory are:
+/bin/ls
+/bin/echo
+/bin/echo Have a nice day!

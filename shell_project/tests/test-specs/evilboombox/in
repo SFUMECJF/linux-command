@@ -1,0 +1,6 @@
+cd tests/test-specs/evilboombox
+path /bin tests/test-utils
+ls tests/test-utils/p2a-test
+ls tests/test-utils/p2a-test > /tmp/ans/utcsh/32ebb
+ls tests/test-utils/p2a-test > /tmp/ans/utcsh/32ebb1 & echo despiteallmyrageiamstilljustaratinacage > /tmp/ans/utcsh/32ebb2
+exit

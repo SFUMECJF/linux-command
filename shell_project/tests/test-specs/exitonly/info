@@ -1,0 +1,6 @@
+{
+  "name": "Exit Only",
+  "description": "Script consists of a single exit command.",
+  "rc": 0,
+  "pointval": 1
+}

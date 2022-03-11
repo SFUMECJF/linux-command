@@ -1,0 +1,5 @@
+path /bin tests/test-utils
+echo This is a relatively long string heyo test test lol > /tmp/ans/utcsh/output20
+echo This is a short string > /tmp/ans/utcsh/output20
+cat /tmp/ans/utcsh/output20
+exit

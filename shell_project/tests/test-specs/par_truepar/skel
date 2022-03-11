@@ -1,0 +1,5 @@
+path /bin $UTILDIR
+p5.sh > $TMPDIR/output$TESTID & p4.sh > $TMPDIR/output$TESTID
+cat $TMPDIR/output$TESTID
+rm -f $TMPDIR/output$TESTID
+exit

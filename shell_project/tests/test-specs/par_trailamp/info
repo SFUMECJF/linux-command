@@ -1,0 +1,6 @@
+{
+  "name": "Trailing &",
+  "description": "Parallel command contains & at the end.",
+  "pointval": 1,
+  "rc": 0
+}
