@@ -1,0 +1,9 @@
+~/utexas/cs439/proj0/tests/test-utils/p2a-ebb ~/utexas/cs439/proj0
+make[1]: Entering directory '/u/yvonne/utexas/cs439/proj0/tests/test-utils/p2a-ebb'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/u/yvonne/utexas/cs439/proj0/tests/test-utils/p2a-ebb'
+~/utexas/cs439/proj0
+despiteallmyrageiamstilljustaratinacage
+despiteallmyrageiamstilljustaratinacage
+Got signal 11 while running allocation tests
+Signal occurred on the 1 function call

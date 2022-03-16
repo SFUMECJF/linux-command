@@ -1,5 +1,5 @@
 path tests/test-utils /bin
-p6.sh > /tmp/ans/utcsh/output25
-cat /tmp/ans/utcsh/output25
-rm -f /tmp/ans/utcsh/output25
+p6.sh > /tmp/yvonne/utcsh/output25
+cat /tmp/yvonne/utcsh/output25
+rm -f /tmp/yvonne/utcsh/output25
 exit

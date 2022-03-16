@@ -1,4 +1,3 @@
-
 本文从零实现Linux指令系列文章，其他系列文章：
 
 [从头实现Linux指令（零）序言](https://blog.csdn.net/weixin_42089190/article/details/123168895)
@@ -110,4 +109,3 @@ unix> fib 10
 ## 互相交流
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200529103009878.gif#pic_center)
-

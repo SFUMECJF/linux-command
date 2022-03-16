@@ -1,0 +1,4 @@
+An error has occurred
+An error has occurred
+An error has occurred
+./tests/test-utils/run-evil-boom-box.sh: line 60: 11077 Segmentation fault      (core dumped) EBB_ALLOC_CTR=$ebb_ctr ./utcsh $inp_path
