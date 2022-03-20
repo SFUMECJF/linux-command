@@ -12,6 +12,7 @@
  * success and zero on error *
  */
 
+// can be setted static and delete here latter
 extern int pathLen;
 
 int set_shell_path(char **newPaths);
