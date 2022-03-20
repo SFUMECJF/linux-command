@@ -247,7 +247,7 @@ int try_exec_builtin(struct Command *cmd) {
       return 1;
   } else if (!strcmp(token, "path")) {
     
-      set_shell_path(&(cmd-> args[1]));    
+      add_shell_path(&(cmd-> args[1]));    
       return 1;
   } else {
     return 0;
@@ -276,11 +276,14 @@ void exec_external_cmd(struct Command *cmd) {
           dup2(fd, 2); // redirect stderr to file
           close(fd);
         }
-        char *pathAndName = NULL;
+        // set a pathAndName buffer
+        char *pathAndName = calloc(MAX_CHARS_PER_CMDLINE,sizeof(char));
+        // memset(pathAndName[i], 0, MAX_CHARS_PER_CMDLINE * sizeof(char));
         for (int i = 0; i < 256 && shell_paths[i] != NULL; i++) {
           // printf("111 :%s\n", shell_paths[i]);
-          pathAndName = strcat(shell_paths[i], "/");
-          pathAndName = strcat(pathAndName, cmd->args[0]);
+          strcpy(pathAndName,shell_paths[i]);
+          strcat(pathAndName, "/");
+          strcat(pathAndName, cmd->args[0]);
         
           if(access(pathAndName, F_OK) == 0) {
             valid_input = 1;
@@ -299,11 +302,14 @@ void exec_external_cmd(struct Command *cmd) {
           //   // print_error();
           // }
         }
-    }
+      }
       exit(0);
     } else {
       int status;
       waitpid(pid, &status, 0);
+
+      //free buffer
+      // free(pathAndName);
 
   }
     

@@ -11,7 +11,12 @@
  * elements have been set or a NULL char* is found in newPaths. Returns 1 on
  * success and zero on error *
  */
+
+extern int pathLen;
+
 int set_shell_path(char **newPaths);
+
+int add_shell_path(char **newPaths);
 
 /** Returns 1 if this is an absolute path, 0 otherwise */
 int is_absolute_path(char *path);

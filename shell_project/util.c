@@ -22,6 +22,9 @@ extern char shell_paths[MAX_ENTRIES_IN_SHELLPATH][MAX_CHARS_PER_CMDLINE];
 /* Should the UTCSH internal functions dump verbose output? */
 static int utcsh_internal_verbose = 0;
 
+/* record path info */
+int pathLen = 0;
+
 void maybe_print_error() {
   if (utcsh_internal_verbose) {
     char *err = strerror(errno);
@@ -43,7 +46,27 @@ int set_shell_path(char **newPaths) {
     }
     strcpy(shell_paths[i], newPaths[i]);
   }
+  //set current pathLen
+  pathLen = i;
+
   return 1;
+}
+
+int add_shell_path(char **newPaths){
+  if (!newPaths) {
+    return 0;
+  }
+  int i = pathLen;
+  for (; i < MAX_ENTRIES_IN_SHELLPATH && newPaths[i - pathLen]; ++i) {
+    if (strlen(newPaths[i - pathLen]) + 1 > MAX_CHARS_PER_CMDLINE) {
+      return 0; /* This path is too long. */
+    }
+    strcpy(shell_paths[i], newPaths[i - pathLen]);
+  }
+  // refine pathLen
+  pathLen = i;
+
+  return 1;  
 }
 
 int is_absolute_path(char *path) {
