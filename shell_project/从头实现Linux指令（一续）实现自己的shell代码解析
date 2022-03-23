@@ -1,0 +1,43 @@
+本文从零实现Linux指令系列文章，其他系列文章：
+
+[从头实现Linux指令（零）序言](https://blog.csdn.net/weixin_42089190/article/details/123168895)
+[从头实现Linux指令（一）实现自己的shell](https://blog.csdn.net/weixin_42089190/article/details/123431703)
+
+[从头实现Linux指令（一续）实现自己的shell代码解析](https://blog.csdn.net/weixin_42089190/article/details/123687139)
+@[toc]
+
+
+## 前言
+
+上周一个读者留言：对shell的代码很感兴趣，并且真正地下载代码到linux上体验了一下，还给仓库提了一个PR。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/44f6be7eb3ef48aba4f01bdac6e8f095.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiJ5Liw5p2C6LSn6ZO6,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+总算证明自己写的并不是单机文章，既然有人看，那就应读者要求写一下这个shell各模块的功能及如何实现的。
+
+## 模块功能及代码具体实现
+
+我的实现可能不是最好的，总体上来说，是一个toy类型的东西，毕竟核心目的是练习linux系统下c语言的系统调用。
+
+### main
+
+主函数里一个if else逻辑，根据argc和argv判断调用shell时输入的参数，如果输入参数为2，那么就是执行脚本，一行一行执行脚本中的代码。如果argc=1，即只一个参数，那就是读取标准输入执行一行指令。
+
+当然，对每一行要使用`merge_lines`合并多余的空格，tab键。也要判断是否存在`&`来执行并发指令。
+### try_exec_builtin
+执行内部的三个指令还是很简单的。
+对于`exit`，直接退出即可。
+对于`cd`，我们要有一个概念，当把磁盘中的二进制可执行文件搬运到内存中时，会维护一个该进程在哪里的目录，所以我们只需要使用c语言的系统调用，`chdir`即可。
+对于`path`，当我们执行外部指令时，我们会维护一个路径的二维数据，每当要执行一个外部指令的时候，都去这些路径下查看是否有相应的外部指令。
+### exec_external_cmd
+执行外部指令是本代码的精髓。
+具体逻辑是：
+1. 首先创建一个进程，在父进程中使用waitpid(pid, &status, 0);等待子进程完成，注意这里的status就是子进程中exit的返回值，这里认为父子进程通过exit（）和waitpid()完成了通信，传输的变量类型是int的数字。
+2. 之后在子进程中，根据是否有重定向的需求来判断是否将标准输出和标准错误重定向到文件，这里使用两个系统调用，dup2(fd, 1);dup2(fd, 2); 1在linux中一般代指标准输出，2在linux中一般指标准错误。
+3. 在子进程中使用execv（）执行一个外部指令，如果成功调用，那么子进程就被这个外部进程替换，如果执行失败。继续执行execv（）后面的代码。
+
+### execute_is_concurrent_command
+如果某一行中有多个`&`就表示有多个指令要并发执行。其实这里的逻辑也很简单，只要同时创建n个进程去执行exec_external_cmd，然后父进程等待这n个进程执行完毕即可。
+
+### 结尾
+shell的逻辑很简单，限于时间和精力，笔者大概只能写这么多了。如果还有其他同学对自己实现一个shell感兴趣。欢迎大家提pr，为程序写下自己的注释。
+
